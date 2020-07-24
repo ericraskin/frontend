@@ -43,6 +43,8 @@ function copyApiReference(playbook, docsSrcPath) {
     runCmdSync(`mkdir ${gitTempDir}`);
     process.chdir(gitTempDir);
     runCmdSync(`git clone ${repo}`);
+    // Explicitly set directory as 'frontend' because repo could has different name
+    runCmdSync(`git clone ${repo} frontend`);
     process.chdir('frontend');
 
     // For each branch copy the API reference files to the built site
