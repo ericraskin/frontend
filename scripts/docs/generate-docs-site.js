@@ -39,6 +39,7 @@ function copyApiReference(playbook, docsSrcPath) {
     // Checkout the repo to a temporary directory
     const projectRootDir = process.cwd();
     const gitTempDir = `${docsSrcPath}/_temp`;
+    runCmdSync(`rm -rf ${gitTempDir}`);
     runCmdSync(`mkdir ${gitTempDir}`);
     process.chdir(gitTempDir);
     runCmdSync(`git clone ${repo}`);
