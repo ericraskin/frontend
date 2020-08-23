@@ -19,12 +19,13 @@ const weirdStringIdManagementListConfig = require('./screens/weird-string-id-man
 const boringStringIdManagementTableConfig = require('./screens/boring-string-id-management-table.json');
 const dirShift = '../../';
 
-gen(
+const genReactClientScr = async () => {
+  await gen(
     'React client SCR',
     clientDir,
     'scripts/model/projectModel-scr.json',
     [
-      { command: 'react-typescript:app' },
+      {command: 'react-typescript:app'},
       // Car Service Center domain entities
       {
         command: 'react-typescript:entity-cards',
@@ -217,4 +218,7 @@ gen(
         answers: boringStringIdManagementTableConfig
       }
     ]
-);
+  );
+};
+
+module.exports = genReactClientScr;
