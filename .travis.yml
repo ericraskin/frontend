@@ -110,7 +110,7 @@ jobs:
       script:
         - node scripts/gen-pack-and-update-libs.js
 #        - npm run bootstrap-react-app
-        - npm run validate-react-app
+        - npm run validate-react-app-win
 #        - npm run build --prefix react-client-scr
 #        - npm run start-react-app &
 #        - sleep 60
