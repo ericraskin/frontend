@@ -15,10 +15,10 @@ async function genPackAndUpdate() {
     ]
   );
 
-  await updateClientLibs(
-    'react-client-scr',
-    ['rest', 'react-core', 'react-ui']
-  );
+  // await updateClientLibs(
+  //   'react-client-scr',
+  //   ['rest', 'react-core', 'react-ui']
+  // );
 
 }
 
