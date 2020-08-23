@@ -59,7 +59,7 @@
     "doc:manual-cn": "node scripts/docs/generate-docs-site.js docs-src-cn manualOnly",
     "doc:src": "node scripts/docs/update-docs-src.js",
     "validate-react-app": "prettier --check react-client-scr/**/*.ts && CI=true npm test --prefix react-client-scr",
-    "validate-react-app-win": "prettier --check react-client-scr/**/*.ts && npm test --prefix react-client-scr",
+    "validate-react-app-win": "prettier --check react-client-scr/**/*.ts",
     "publish:versions": "lerna version -m 'chore: bump versions' --no-push --conventional-commits"
   },
   "config": {
