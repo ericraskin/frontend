@@ -1,4 +1,5 @@
 const packClientLibs = require('./pack-client-libs');
+const updateClientLibs = require('./update-client-libs');
 
 packClientLibs(
   [],
@@ -9,3 +10,7 @@ packClientLibs(
   ]
 );
 
+updateClientLibs(
+  'react-client-scr',
+  ['rest', 'react-core', 'react-ui']
+);

@@ -108,7 +108,7 @@ jobs:
       # setup cuba postgres user; build and run backend app
 #      before_install: node scripts/ci-bootstrap-backend.js
       script:
-#        - node scripts/generate-react-client-scr.js
+        - node scripts/generate-react-client-scr.js
         - node scripts/pack-and-update-libs.js
 #        - npm run bootstrap-react-app
 #        - npm run validate-react-app
