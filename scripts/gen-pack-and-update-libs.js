@@ -4,7 +4,7 @@ const genReactClientScr = require('./generate-react-client-scr');
 
 async function genPackAndUpdate() {
 
-  await genReactClientScr();
+  // await genReactClientScr();
 
   await packClientLibs(
     [],
